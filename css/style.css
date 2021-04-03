@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(70, 70, 70);
+}
+
+.gen-padding {
+  padding: 2rem;
+}
+
+.theme-color {
+  color: #d0a2f5;
+}
+
+.btn {
+  background-color: #d0a2f5;
+  color: white;
+  padding: 0.8rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #9864c2;
+}
+
+/* Navigation Bar */
+
+nav img {
+  padding-right: 0.4rem;
+}
+
+.nav-bar h1 {
+  color: white;
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: rgb(70, 70, 70);
+  padding: 0.7rem;
+}
+
+.logo-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.6rem;
+  margin: 0 0.25rem;
+}
+
+.nav-bar ul li a:hover {
+  background-color: #d0a2f5;
+  border-radius: 5px;
+}
+
+/* Header */
+
+header {
+  background: url(../images/cover.jpg) no-repeat center center/cover;
+  height: 90vh;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.452);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+}
+
+header p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+}
+
+header a {
+  margin-top: 3rem;
+}
+
+/* Services */
+
+#services {
+  text-align: center;
+}
+
+.services-sec {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+#services h2 {
+  margin-bottom: 0.8rem;
+}
+
+.ser-itm {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ser-logos {
+  display: flex;
+  background-color: #d0a2f5;
+  width: 90px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.ser-itm .ser-content {
+  margin: 1rem;
+}
+
+/* Staff */
+
+#staff {
+  display: flex;
+}
+
+.staff-img {
+  background: url(../images/staff.jpg) no-repeat center center/cover;
+  flex: 1;
+}
+
+.staff-cnt {
+  flex: 1;
+  background-color: rgb(70, 70, 70);
+}
+
+#staff h1,
+#staff p,
+#staff ul,
+#staff ul {
+  padding: 1rem;
+  color: white;
+}
+
+#staff ul li {
+  color: white;
+}
+
+#staff ul {
+  list-style: none;
+  font-size: 1.15rem;
+}
+
+/* Contact */
+
+#contact {
+  background: url(../images/contact.png) no-repeat center center/cover;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-head {
+  text-align: center;
+}
+
+.contact-head h1,
+.contact-head p {
+  color: rgb(70, 70, 70);
+}
+
+.sec-contact {
+  background-color: #d0a2f5c5;
+  margin: 50px;
+  width: 100vw;
+  max-width: 1100px;
+  border-radius: 10px;
+}
+
+#contact label {
+  color: rgb(70, 70, 70);
+  display: block;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+  margin: 5px 0;
+  width: 100%;
+  height: 1.5rem;
+}
+
+#contact textarea {
+  min-height: 80px;
+}
+
+button {
+  border: none;
+  background-color: rgb(70, 70, 70);
+  color: white;
+  border-radius: 3px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(88, 88, 88);
+}
+
+/* ------------ */
+
+@media (max-width: 660px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar ul {
+    margin-top: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    padding: 1.3rem;
+  }
+
+  .ser-itm {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  .ser-logos {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .ser-itm p {
+    font-size: 1.3rem;
+  }
+
+  .ser-itm h2 {
+    font-size: 1.15rem;
+  }
+
+  #staff .staff-img {
+    display: none;
+  }
+
+  .sec-contact {
+    margin: 1.1rem;
+  }
+}
+
+/*  540px Max Width */
+
+@media (max-width: 545px) {
+  .services-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 300 Max Width */
+
+@media (max-width: 300px) {
+  .nav-bar ul li a {
+    font-size: 0.8rem;
+  }
+}
